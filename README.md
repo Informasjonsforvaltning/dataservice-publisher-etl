@@ -8,6 +8,7 @@
 ```
 .env:
 ```
+DATASERVICE_PUBLISHER_HOST_URL=https://dataservice-publisher.digdir.no
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=super_secret
 ```
