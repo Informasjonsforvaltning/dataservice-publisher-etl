@@ -1,0 +1,2 @@
+- [ ] Validate json files
+- [ ] Transform the input json file to dicts and persist to file

@@ -1,0 +1,32 @@
+{
+  "identifier": "https://dataservice-publisher.staging.fellesdatakatalog.digdir.no/catalogs/2",
+  "title": {
+    "nb": "Dataservicekatalog for Felles datakatalog"
+  },
+  "description": {
+    "nb": "Katalog med FDK-relaterte api-beskrivelser i seksjon for Informasjonsforvaltning"
+  },
+  "publisher": "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827",
+  "apis": [
+    {
+      "identifier": "https://dataservice-publisher.staging.fellesdatakatalog.digdir.no/dataservices/{id}",
+      "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-informationmodel-harvester/master/src/main/resources/specification/specification.yaml"
+    },
+    {
+      "identifier": "https://dataservice-publisher.staging.fellesdatakatalog.digdir.no/dataservices/{id}",
+      "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-dataservice-harvester/master/src/main/resources/specification/fdk-dataservice-harvester.yaml"
+    },
+    {
+      "identifier": "https://dataservice-publisher.staging.fellesdatakatalog.digdir.no/dataservices/{id}",
+      "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/concept-catalogue/master/src/main/resources/static/ConceptRegistrationAPI.yaml"
+    },
+    {
+      "identifier": "https://dataservice-publisher.staging.fellesdatakatalog.digdir.no/dataservices/{id}",
+      "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/concept-catalogue/master/src/main/resources/static/skos-ap-no.yaml"
+    },
+    {
+      "identifier": "https://dataservice-publisher.staging.fellesdatakatalog.digdir.no/dataservices/{id}",
+      "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalogue/master/src/main/resources/specification/organization-catalogue.yaml"
+    }
+  ]
+}

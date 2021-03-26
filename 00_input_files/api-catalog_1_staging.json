@@ -1,0 +1,20 @@
+{
+  "identifier": "https://dataservice-publisher.staging.fellesdatakatalog.digdir.no/catalogs/1",
+  "title": {
+    "nb": "Dataservicekatalog for Digitaliseringsdirektoratet"
+  },
+  "description": {
+    "nb": "Katalog med alle api-beskrivelser i seksjon for Informasjonsforvaltning"
+  },
+  "publisher": "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827",
+  "apis": [
+    {
+      "identifier": "https://dataservice-publisher.staging.fellesdatakatalog.digdir.no/dataservices/{id}",
+      "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/model-publisher/master/model-catalog.yaml"
+    },
+    {
+      "identifier": "https://dataservice-publisher.staging.fellesdatakatalog.digdir.no/dataservices/{id}",
+      "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/dataservice-publisher/master/dataservice-publisher.yaml"
+    }
+  ]
+}
