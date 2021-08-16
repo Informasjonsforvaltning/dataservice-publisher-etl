@@ -16,3 +16,7 @@ ADMIN_PASSWORD=super_secret
 ```
 % python 03_load/load.py
 ```
+
+## Hosts
+Test: https://dataservice-publisher.demo.fellesdatakatalog.digdir.no
+Prod: https://dataservice-publisher.digdir.no

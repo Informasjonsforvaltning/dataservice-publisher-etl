@@ -10,6 +10,7 @@ load_dotenv()
 DATASERVICE_PUBLISHER_HOST_URL = env.get("DATASERVICE_PUBLISHER_HOST_URL")
 ADMIN_USERNAME = env.get("ADMIN_USERNAME", "admin")
 ADMIN_PASSWORD = env.get("ADMIN_PASSWORD")
+INPUT_FILE = env.get("INPUT_FILE")
 
 
 def login() -> str:
@@ -36,7 +37,7 @@ def login() -> str:
 def load_catalog(access_token) -> None:
     """Should return status code 201 and a valid location header."""
     url = f"{DATASERVICE_PUBLISHER_HOST_URL}/catalogs"
-    with open("00_input_files/api-catalog_2.json") as json_file:
+    with open(INPUT_FILE) as json_file:
         data = json.load(json_file)
     headers = {
         "Content-Type": "application/json",
