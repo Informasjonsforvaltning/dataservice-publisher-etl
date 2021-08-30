@@ -2,7 +2,7 @@
 
 ## Setup
 ```
-% pyenv virtualenv 3.8.6 dataservice-publisher-etl
+% pyenv virtualenv 3.9.6 dataservice-publisher-etl
 % pyenv local dataservice-publisher-etl
 % pip install -r requirements.txt
 ```
