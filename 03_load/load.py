@@ -34,19 +34,41 @@ def login() -> str:
     return None
 
 
-def load_catalog(access_token) -> None:
-    """Should return status code 201 and a valid location header."""
+def delete_catalog(access_token, catalog) -> bool:
+    """Tries to delete the catalog."""
+    headers = {
+        "Authorization": f"Bearer {access_token}",
+    }
+
+    url = catalog["identifier"]
+    response = requests.delete(url, headers=headers)
+    if response.status_code == 204:
+        print(f"Deleted catalog {url}")
+        return True
+    elif response.status_code == 404:
+        print(f"Catalog {url} does not exist. Safe to proceed")
+        return True
+    else:
+        logging.error(f"Unsuccessful, status_code: {response.status_code}")
+        # msg = json.loads(response.content)["msg"]
+        # logging.error(f"Unsuccessful, msg : {msg}")
+        logging.error(response.content)
+    return False
+
+
+def load_catalog(access_token, catalog) -> bool:
+    """Loads the catalog and returns True if successful."""
     url = f"{DATASERVICE_PUBLISHER_HOST_URL}/catalogs"
-    with open(INPUT_FILE) as json_file:
-        data = json.load(json_file)
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {access_token}",
     }
 
-    response = requests.post(url, json=data, headers=headers)
+    response = requests.post(url, json=catalog, headers=headers)
     if response.status_code == 200:
-        print("loaded from file %s", json_file.name)
+        print(
+            f"loaded from file {json_file.name}",
+        )
         return True
     else:
         logging.error(f"Unsuccessful, status_code: {response.status_code}")
@@ -59,6 +81,9 @@ def load_catalog(access_token) -> None:
 if __name__ == "__main__":
     access_token = login()
     if access_token:
-        result = load_catalog(access_token)
-        if result:
-            print("Successful")
+        with open(INPUT_FILE) as json_file:
+            catalog = json.load(json_file)
+            delete_catalog(access_token, catalog)
+            result = load_catalog(access_token, catalog)
+            if result:
+                print(f"Successfully loaded content of {INPUT_FILE}.")
