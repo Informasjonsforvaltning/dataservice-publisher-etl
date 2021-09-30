@@ -12,7 +12,7 @@
       "identifier": "https://dataservice-publisher.staging.fellesdatakatalog.digdir.no/dataservices/{id}",
       "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/dsop-api-spesifikasjoner/master/specs/test/Sparebank1_837884942_Accounts-API.json",
       "conformsTo": [
-        "https://data.norge.no/specification/kontoopplysninger"
+        "https://bitsnorge.github.io/dsop-accounts-api"
       ],
       "publisher": "https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/837884942"
     },
