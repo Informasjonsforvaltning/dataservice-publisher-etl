@@ -27,6 +27,10 @@
     {
       "identifier": "https://dataservice-publisher.digdir.no/dataservices/{id}",
       "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalogue/master/src/main/resources/specification/organization-catalogue.yaml"
+    },
+    {
+      "identifier": "https://dataservice-publisher.digdir.no/dataservices/{id}",
+      "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/fdk-dataset-harvester/main/src/main/resources/specification/fdk-dataset-harvester.yaml"
     }
   ]
 }

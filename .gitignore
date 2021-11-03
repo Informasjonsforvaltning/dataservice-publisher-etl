@@ -130,3 +130,6 @@ dmypy.json
 .pyre/
 
 /tmp
+
+# IDE
+.vscode
