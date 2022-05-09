@@ -26,7 +26,7 @@
     },
     {
       "identifier": "https://dataservice-publisher.digdir.no/dataservices/{id}",
-      "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalogue/master/src/main/resources/specification/organization-catalogue.yaml"
+      "url": "https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalog/main/src/main/resources/specification/organization-catalog.yaml"
     },
     {
       "identifier": "https://dataservice-publisher.digdir.no/dataservices/{id}",
